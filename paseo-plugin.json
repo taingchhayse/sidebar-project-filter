@@ -1,0 +1,8 @@
+{
+  "id": "sidebar-project-filter",
+  "name": "Sidebar Project Filter",
+  "description": "Filters Paseo sidebar projects as you type.",
+  "requirements": {
+    "paseo": ">=0.10.1"
+  }
+}

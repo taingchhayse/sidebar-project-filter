@@ -1,0 +1,25 @@
+{
+  "name": "sidebar-project-filter",
+  "version": "0.1.0",
+  "license": "MIT",
+  "private": true,
+  "files": [
+    "paseo-plugin.json",
+    "OVERVIEW.md",
+    "index.client.ts",
+    "client/",
+    "shared/"
+  ],
+  "type": "module",
+  "scripts": {
+    "test": "node --experimental-strip-types --test shared/filter.test.mjs",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@getpaseo/plugin": "0.10.1",
+    "@types/react": "~19.2.0",
+    "react": "19.1.0",
+    "react-native": "0.81.5",
+    "typescript": "^5.9.3"
+  }
+}
