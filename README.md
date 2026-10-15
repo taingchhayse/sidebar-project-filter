@@ -1,15 +1,11 @@
 # Sidebar Project Filter
 
-A private, client-only Paseo desktop plugin that adds a project search box above the sidebar workspace controls.
+A client-only Paseo plugin that adds a project search box above the sidebar workspace controls. Type part of a project name or path to show only matching project groups and their workspaces.
 
 ## Install
 
 ```bash
-cd ~/.local/share/paseo-plugins/sidebar-project-filter
-npm install
-npm run typecheck
-npm test
-paseo plugin install "$PWD"
+paseo plugin add git:taingchhayse/sidebar-project-filter
 ```
 
 Reload after source changes:
