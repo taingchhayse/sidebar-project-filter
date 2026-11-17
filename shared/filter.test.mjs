@@ -1,9 +1,12 @@
 import assert from "node:assert/strict";
 import test from "node:test";
-import { matchesProject } from "./filter.ts";
+import { hasProjectQuery, matchesProject } from "./filter.ts";
 
-test("an empty query shows every project", () => {
+test("an empty or punctuation-only query shows every project", () => {
   assert.equal(matchesProject("   ", ["Payments", "/repos/payments"]), true);
+  assert.equal(matchesProject("--- / _", ["Payments", "/repos/payments"]), true);
+  assert.equal(hasProjectQuery("--- / _"), false);
+  assert.equal(hasProjectQuery("pay"), true);
 });
 
 test("fuzzy matches names and paths without case sensitivity", () => {
