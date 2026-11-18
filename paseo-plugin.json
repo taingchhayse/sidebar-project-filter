@@ -1,6 +1,6 @@
 {
   "id": "sidebar-project-filter",
   "requirements": {
-    "paseo": ">=0.10.1"
+    "paseo": ">=0.10.1 <0.17.0"
   }
 }
